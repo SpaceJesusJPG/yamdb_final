@@ -2,7 +2,7 @@
 ## <h1 align="center"> Проект YaMDb </h1>
 >"Review and comment your favourites" 
 
-
+![Django-app workflow](https://github.com/SpaceJesusJPG/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ## Описание
 Проект YaMDb собирает отзывы пользователей на произведения. Произведения делятся на категории: «Книги», «Фильмы», «Музыка». Список категорий может быть расширен администратором (например, можно добавить категорию «Изобразительное искусство» или «Ювелирка»).
@@ -22,6 +22,9 @@
 * Django 2.2
 * Django Rest Framework 3.12
 * Simple JWT
+* nginx
+* Docker
+* Docker-Compose
 
 ### Посмотреть уже развернутый проект:
 
@@ -71,5 +74,3 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 Примеры запросов к API и документацию можно посмотреть [тут](http://127.0.0.1:8000/redoc/) **(при запущенном проекте)**
-
-![Django-app workflow](https://github.com/SpaceJesusJPG/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
