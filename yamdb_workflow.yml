@@ -41,10 +41,12 @@ jobs:
         - name: Push to Docker Hub
           uses: docker/build-push-action@v2 
           with:
+            context: ./api_yamdb
             push: true
             tags: arsenyrazumovsky/api_yamdb:latest
 
   deploy:
+    if: github.ref_name == 'master'
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
     steps:
