@@ -10,7 +10,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', default='p&l%385148kslhtyn^##a1)ilz@4zqj=rq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["arsenytube.sytes.net", "51.250.18.216"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
